@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+.container{
+    background-image: url("/images/bg-desktop.svg");
+    background-color: hsl(257, 40%, 49%);
+    font-size: 15px;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header {
+    padding: 30px 0 30px 0;
+}
+.center{
+    display: flex;
+}
+.center-text {
+    padding: 45px;
+    position: relative;
+    width: 42%;
+    color: white;
+}
+h1 {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 17px 0;
+    line-height: 50px;
+}
+p {
+    line-height: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 0 0 36px 0;
+}
+button {
+    padding: 16px 78px;
+    border-radius: 20px;
+    border: 1px;
+    color: hsl(257, 40%, 49%);
+}
+footer {
+    float: right;
+    position: absolute;
+    top: 614px;
+    right: 90px;
+}
+i {
+    padding: 0px 12px;
+    color: white;
+}
+button:active{
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+.fa-twitter:active{
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+@media screen and (max-width:1100px) {
+    .center{
+        display: initial;
+    }
+    .center-text {
+        width: 42%;
+        color: white;
+        text-align: center;
+        padding: 0;
+        position: static;
+    }
+    footer {
+        float: right;
+    position: absolute;
+    top: 614px;
+    right: 90px;
+    } 
+}
+@media screen and (max-width:375px){
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        float: none;
+        position: static;
+        top: 0;
+        right: 0;
+        padding: 31px;
+    }
+    .center-text {
+        color: white;
+        text-align: center;
+    }
+    .container{
+        background-image: url("/images/bg-mobile.svg");
+    }
+
+    
+}
+
